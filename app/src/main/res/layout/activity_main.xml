@@ -18,39 +18,48 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"/>
 
-    <Button
-        android:id="@+id/incrementButton"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:text="@string/incrementButton"
-        android:textSize="24sp"
-        android:onClick="increaseQuantity"
-        android:background="@color/colorAccent"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"/>
-
-    <TextView
-        android:id="@+id/quantity_value"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quantity_value"
-        android:textColor="@android:color/primary_text_dark"
-        android:textSize="16sp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"/>
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/decrementButton"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:text="@string/decrementButton"
-        android:textSize="24sp"
-        android:onClick="decreaseQuantity"
-        android:background="@color/colorAccent"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="16dp"/>
+        <Button
+            android:id="@+id/decrementButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:onClick="decreaseQuantity"
+            android:text="@string/decrementButton"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/quantity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:text="@string/quantity_value"
+            android:textColor="@android:color/primary_text_dark"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/incrementButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:onClick="increaseQuantity"
+            android:text="@string/incrementButton"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/price_title"
