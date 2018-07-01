@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity {
     public void submitOrder(View view) {
         display(numberOfCoffees);
         displayPrice(numberOfCoffees * pricePerCoffee);
-        if(numberOfCoffees == 0) {
+        if (numberOfCoffees == 0) {
             Toast.makeText(getApplicationContext(), "Nothing ordered", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(getApplicationContext(),"Thank you!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Thank you!", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void decreaseQuantity(View view) {
         if (numberOfCoffees <= 0) {
-            Toast.makeText(getApplicationContext(),"ERROR: Can't have less than 0", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "ERROR: Can't have less than 0", Toast.LENGTH_SHORT).show();
         }
         numberOfCoffees = numberOfCoffees > 0 ? numberOfCoffees - 1 : 0;
         display(numberOfCoffees);
