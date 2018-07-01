@@ -28,6 +28,27 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"/>
 
+    <TextView
+        android:id="@+id/price_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_title"
+        android:textAllCaps="true"
+        android:textColor="@android:color/secondary_text_dark"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/price_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_value"
+        android:textColor="@android:color/primary_text_dark"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"/>
+
     <Button
         android:id="@+id/order_button"
         android:layout_width="wrap_content"
