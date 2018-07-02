@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     int numberOfCoffees = 0;
     double pricePerCoffee = 5.00;
+    String priceMessage = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +26,15 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        display(numberOfCoffees);
-        displayPrice(numberOfCoffees * pricePerCoffee);
+        // displayPrice(numberOfCoffees * pricePerCoffee);
         if (numberOfCoffees == 0) {
             Toast.makeText(getApplicationContext(), "Nothing ordered", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(getApplicationContext(), "Thank you!", Toast.LENGTH_SHORT).show();
         }
+        priceMessage = "Price per coffee: " + NumberFormat.getCurrencyInstance().format(pricePerCoffee) + "\n" +
+                "Total: " + NumberFormat.getCurrencyInstance().format(numberOfCoffees * pricePerCoffee);
+        displayMessage(priceMessage);
     }
 
     /**
@@ -51,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
         }
         numberOfCoffees = numberOfCoffees > 0 ? numberOfCoffees - 1 : 0;
         display(numberOfCoffees);
+    }
+
+    private void displayMessage(String string) {
+        TextView priceTextView = (TextView) findViewById(R.id.price_value);
+        priceTextView.setText(string);
     }
 
     /**
