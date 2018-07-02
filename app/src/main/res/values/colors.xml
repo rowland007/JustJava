@@ -3,9 +3,4 @@
     <color name="colorPrimary">#0000ff</color>
     <color name="colorPrimaryDark">#4000ff</color>
     <color name="colorAccent">#ff00ff</color>
-    <color name="colorBackgound">#8000ff</color>
-    <color name="colorControl">#bf00ff</color>
-    <color name="textColorPrimary">#ffffff</color>
-    <color name="textColorPrimaryDark">#000000</color>
-    <color name="textColorAccent">#bf00ff</color>
 </resources>

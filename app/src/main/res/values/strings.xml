@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">JustJava</string>
+    <string name="app_name">Pyxis</string>
+    <string name="radioStationNameText">Radio Station</string>
+    <string name="songNameText">Song Name</string>
+    <string name="artistNameText">Artist Name</string>
+    <string name="progressTimeText">0:00</string>
+    <string name="endTimeText">-0:00</string>
 </resources>
